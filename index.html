@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ADNANE BOUJANA | High-Performance Coaching</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&amp;family=Montserrat:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-primary-container": "#5b000e",
+                    "secondary": "#c6c6c7",
+                    "on-secondary-fixed": "#1a1c1c",
+                    "on-primary-fixed": "#410007",
+                    "on-secondary-container": "#b4b5b5",
+                    "primary-fixed-dim": "#ffb3b1",
+                    "secondary-fixed": "#e2e2e2",
+                    "surface-container": "#201f1f",
+                    "on-tertiary-container": "#00302c",
+                    "tertiary-fixed-dim": "#6fd8cc",
+                    "surface-tint": "#ffb3b1",
+                    "on-primary": "#680011",
+                    "on-tertiary": "#003733",
+                    "on-surface-variant": "#e4bebc",
+                    "primary": "#ffb3b1",
+                    "primary-fixed": "#ffdad8",
+                    "surface-container-highest": "#353534",
+                    "outline-variant": "#5b403f",
+                    "on-secondary": "#2f3131",
+                    "outline": "#ab8987",
+                    "primary-container": "#ff535b",
+                    "surface-container-high": "#2a2a2a",
+                    "tertiary-container": "#2fa096",
+                    "tertiary": "#6fd8cc",
+                    "surface-dim": "#131313",
+                    "on-error-container": "#ffdad6",
+                    "secondary-fixed-dim": "#c6c6c7",
+                    "on-error": "#690005",
+                    "on-primary-fixed-variant": "#92001c",
+                    "surface-variant": "#353534",
+                    "background": "#131313",
+                    "tertiary-fixed": "#8cf4e8",
+                    "on-tertiary-fixed": "#00201d",
+                    "surface-container-low": "#1c1b1b",
+                    "inverse-on-surface": "#313030",
+                    "surface": "#131313",
+                    "error": "#ffb4ab",
+                    "error-container": "#93000a",
+                    "surface-container-lowest": "#0e0e0e",
+                    "on-background": "#e5e2e1",
+                    "inverse-primary": "#bb152c",
+                    "secondary-container": "#454747",
+                    "surface-bright": "#3a3939",
+                    "on-tertiary-fixed-variant": "#00504a",
+                    "on-secondary-fixed-variant": "#454747",
+                    "on-surface": "#e5e2e1",
+                    "inverse-surface": "#e5e2e1"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "section-gap-mobile": "64px",
+                    "section-gap-desktop": "120px",
+                    "gutter": "24px",
+                    "container-padding": "24px",
+                    "base": "8px"
+            },
+            "fontFamily": {
+                    "headline-lg-mobile": ["Oswald"],
+                    "headline-lg": ["Oswald"],
+                    "headline-md": ["Oswald"],
+                    "body-lg": ["Montserrat"],
+                    "body-md": ["Montserrat"],
+                    "display-lg": ["Oswald"],
+                    "label-lg": ["Montserrat"],
+                    "label-sm": ["Montserrat"]
+            },
+            "fontSize": {
+                    "headline-lg-mobile": ["36px", {"lineHeight": "42px", "fontWeight": "700"}],
+                    "headline-lg": ["48px", {"lineHeight": "56px", "fontWeight": "700"}],
+                    "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "display-lg": ["84px", {"lineHeight": "90px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.1em", "fontWeight": "700"}],
+                    "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>body {
+    background-color: #131313;
+    color: #e5e2e1;
+    scroll-behavior: smooth;
+    overflow-x: hidden
+    }
+.grain {
+    background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuD7gM71BvnPaUj5Lag5UqD4V_wCIHpSYXljzvjSR0pShqKDnPVAl1AOYftJSeGl9zmloI6tkcOkWLebYd-ejasXxCVUAFxFgo42T_5nBcTqzZeaxTZmLFz1qCHq9PiXbEfYbOEtOHGARQZtzGVbJbfZGswVEJ9KMk0O8excd-U8ZTaQCXKrv_hA9-HzmOArQbrOhLNbwUnMW-QcWxkQtt0iU4a5K9XwkzTBkKr7VDXaJEMpAVsru0oibezLiwDzaKTtHIUKvt77iCcf);
+    opacity: 0.03;
+    pointer-events: none
+    }
+.text-stroke {
+    -webkit-text-stroke: 1px rgba(255, 179, 177, 0.3);
+    color: transparent
+    }
+.btn-slide {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1)
+    }
+.btn-slide::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 0
+    }
+.btn-slide:hover::before {
+    left: 0
+    }
+.btn-slide span {
+    position: relative;
+    z-index: 1
+    }
+.reveal {
+    opacity: 0;
+    transform: translatey(30px);
+    transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1)
+    }
+.reveal.active {
+    opacity: 1;
+    transform: translatey(0)
+    }</style>
+</head>
+<body class="dark selection:bg-primary-container selection:text-on-primary-container">
+<div class="fixed inset-0 grain z-[9999]"></div>
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-background/90 dark:bg-background/90 backdrop-blur-md">
+<div class="flex justify-between items-center px-gutter py-4 w-full max-w-7xl mx-auto">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-on-surface cursor-pointer md:hidden" id="menuBtn">menu</span>
+<h1 class="text-headline-md font-headline-md font-bold tracking-tighter text-on-surface dark:text-on-surface">ADNANE</h1>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-label-lg font-label-lg text-on-surface dark:text-on-surface hover:text-primary transition-colors duration-300" href="#about">About</a>
+<a class="text-label-lg font-label-lg text-on-surface dark:text-on-surface hover:text-primary transition-colors duration-300" href="#training">Services</a>
+<a class="text-label-lg font-label-lg text-on-surface dark:text-on-surface hover:text-primary transition-colors duration-300" href="#transformations">Transformations</a>
+<a class="text-label-lg font-label-lg text-on-surface dark:text-on-surface hover:text-primary transition-colors duration-300" href="#contact">Contact</a>
+</nav>
+<button class="bg-primary-container text-on-primary-container px-6 py-2 font-label-lg text-label-lg font-bold tracking-widest btn-slide">
+<span>JOIN NOW</span>
+</button>
+</div>
+</header>
+<!-- Side Navigation Drawer (Mobile) -->
+<div class="fixed inset-0 bg-black/60 z-[60] hidden transition-opacity duration-300" id="drawer">
+<div class="h-full w-80 bg-surface-container-low dark:bg-surface-container-low flex flex-col gap-base p-container-padding shadow-xl transform -translate-x-full transition-transform duration-300 ease-in-out" id="drawerContent">
+<div class="flex justify-between items-center mb-8">
+<span class="text-headline-md font-headline-md font-bold text-on-surface">ADNANE</span>
+<span class="material-symbols-outlined cursor-pointer" id="closeBtn">close</span>
+</div>
+<a class="flex items-center gap-4 p-4 text-on-surface-variant hover:bg-surface-container-high transition-all rounded-lg" href="#about">
+<span class="material-symbols-outlined">person</span>
+<span class="text-label-lg font-label-lg">About</span>
+</a>
+<a class="flex items-center gap-4 p-4 text-on-surface-variant hover:bg-surface-container-high transition-all rounded-lg" href="#training">
+<span class="material-symbols-outlined">fitness_center</span>
+<span class="text-label-lg font-label-lg">Services</span>
+</a>
+<a class="flex items-center gap-4 p-4 text-on-surface-variant hover:bg-surface-container-high transition-all rounded-lg" href="#transformations">
+<span class="material-symbols-outlined">auto_awesome</span>
+<span class="text-label-lg font-label-lg">Transformations</span>
+</a>
+<a class="flex items-center gap-4 p-4 text-on-surface-variant hover:bg-surface-container-high transition-all rounded-lg" href="#contact">
+<span class="material-symbols-outlined">mail</span>
+<span class="text-label-lg font-label-lg">Contact</span>
+</a>
+</div>
+</div>
+<main>
+<!-- Hero Section -->
+<section class="relative h-screen w-full flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-background/50 z-10"></div>
+<div class="absolute inset-0 z-0">
+<img alt="Adnane Boujana Hero Image" class="w-full h-full object-cover object-top opacity-60 md:opacity-80" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTTIlwLTbiYdxkHYd3gNRcA1896Cpr120pWmwqbMyBVQLqao9oZK7VzL-qnkzQcxZKLUhMY-hK2y5VL8gIsvUvpfFKHcnZ5ehDAwS9pm3OLmUV7_6Np4ENCfiOZ4hswTlV6tNoy_0kSCHMzuQVR0Ifkf-bXCO6AGb7wfKceR3L4Lw0_3eYGN9ys-vPq5Fj1dJD3rXU4JwmsjPOf1WNQM99RQ8GuPJP0Uhin3lW5lWcEoRo5okzmBYav_jblJAYPnsvieFTLiEphp_z"/>
+</div>
+<div class="relative z-20 text-center px-gutter max-w-5xl">
+<h2 class="font-display-lg text-[64px] md:text-display-lg uppercase leading-none tracking-tighter mb-4 animate-pulse">
+                    ADNANE BOUJANA
+                </h2>
+<div class="h-1 w-24 bg-primary-container mx-auto mb-6"></div>
+<p class="text-headline-md font-headline-md tracking-[0.4em] uppercase text-primary">FITNESS</p>
+<div class="mt-12 flex flex-col md:flex-row gap-4 justify-center items-center">
+<a class="w-full md:w-auto bg-primary-container text-on-primary-container px-10 py-4 font-headline-md text-[18px] font-bold btn-slide" href="#contact">
+<span>START YOUR JOURNEY</span>
+</a>
+<a class="w-full md:w-auto border border-on-surface text-on-surface px-10 py-4 font-headline-md text-[18px] font-bold hover:bg-on-surface hover:text-background transition-all" href="#transformations">
+                        VIEW RESULTS
+                    </a>
+</div>
+</div>
+<div class="absolute bottom-10 left-1/2 -translate-x-1/2 z-20 animate-bounce">
+<span class="material-symbols-outlined text-primary text-4xl">keyboard_double_arrow_down</span>
+</div>
+</section>
+<!-- About Section -->
+<section class="py-section-gap-mobile md:py-section-gap-desktop px-gutter max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center" id="about">
+<div class="reveal">
+<h3 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg mb-8 uppercase">PRÉSENTATION</h3>
+<p class="text-body-lg font-body-lg text-secondary mb-6 leading-relaxed">
+                    Coach certifié avec plus de 10 ans d'expérience, j'accompagne les individus ambitieux dans leur quête de performance et de transformation physique. Mon approche combine la science de l'entraînement moderne et une discipline de fer.
+                </p>
+<p class="text-body-lg font-body-lg text-secondary mb-10 leading-relaxed">
+                    Chaque séance est une opportunité de repousser vos limites. Que vous cherchiez une prise de masse athlétique ou une sèche extrême, mon expertise vous garantit des résultats concrets et durables.
+                </p>
+<div class="grid grid-cols-2 gap-8 border-l-2 border-primary-container pl-8">
+<div>
+<div class="text-primary font-display-lg text-4xl">500+</div>
+<div class="text-label-lg font-label-lg uppercase opacity-60">Clients Coachés</div>
+</div>
+<div>
+<div class="text-primary font-display-lg text-4xl">10Y</div>
+<div class="text-label-lg font-label-lg uppercase opacity-60">Expérience</div>
+</div>
+</div>
+</div>
+<div class="relative group reveal">
+<div class="absolute -inset-4 bg-primary-container/20 blur-3xl group-hover:bg-primary-container/30 transition-all duration-500"></div>
+<div class="relative bg-surface-container-high p-4 rounded-xl">
+<img class="w-full aspect-[4/5] object-cover grayscale hover:grayscale-0 transition-all duration-700" data-alt="Close up professional portrait of fitness coach Adnane in a dramatic studio setting with moody cinematic lighting and deep shadows highlighting muscle definition." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTTIlwLTbiYdxkHYd3gNRcA1896Cpr120pWmwqbMyBVQLqao9oZK7VzL-qnkzQcxZKLUhMY-hK2y5VL8gIsvUvpfFKHcnZ5ehDAwS9pm3OLmUV7_6Np4ENCfiOZ4hswTlV6tNoy_0kSCHMzuQVR0Ifkf-bXCO6AGb7wfKceR3L4Lw0_3eYGN9ys-vPq5Fj1dJD3rXU4JwmsjPOf1WNQM99RQ8GuPJP0Uhin3lW5lWcEoRo5okzmBYav_jblJAYPnsvieFTLiEphp_z"/>
+</div>
+</div>
+</section>
+<!-- Training Section -->
+<section class="relative py-section-gap-mobile md:py-section-gap-desktop overflow-hidden" id="training">
+<div class="absolute inset-0 z-0">
+<img alt="Gym background" class="w-full h-full object-cover opacity-20 scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQWnG8LfcfJOi8Rxkw8PaFH7yLFXrvPr81ariwBp-wLbRKdw3cANx-V5j65-vJTINLBiRNFoUmDn-iKWWVDLR3WQ_NxuiQmu1cWVsYoqjLNJssU-BW-5pobJeDlmk4-gg9Qa-dK_MJNlz_dhMc3BKDQBltnmCoJwGffVp5yScA9do8AVSj107aBu0HKyX2LrHp_ZR7xi0rECtS2Lkpj2e_2pQhZH7J0PTWNCsU92-EfnfQJcGVUPL9t15eAFxU8SFBpeM7VGSD6_Ze"/>
+<div class="absolute inset-0 bg-gradient-to-b from-background via-transparent to-background"></div>
+</div>
+<div class="relative z-10 px-gutter max-w-7xl mx-auto text-center">
+<h3 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg mb-16 uppercase reveal">SÉANCES D'ENTRAÎNEMENT</h3>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="bg-surface-container/60 backdrop-blur-md p-10 reveal hover:border-primary-container border border-transparent transition-all group">
+<span class="material-symbols-outlined text-primary text-5xl mb-6 group-hover:scale-110 transition-transform">fitness_center</span>
+<h4 class="text-headline-md font-headline-md mb-4">HYPERTROPHIE</h4>
+<p class="text-body-md font-body-md text-secondary">Optimisez votre volume musculaire avec des protocoles d'entraînement basés sur la tension mécanique et le stress métabolique.</p>
+</div>
+<div class="bg-surface-container/60 backdrop-blur-md p-10 reveal hover:border-primary-container border border-transparent transition-all group">
+<span class="material-symbols-outlined text-primary text-5xl mb-6 group-hover:scale-110 transition-transform">bolt</span>
+<h4 class="text-headline-md font-headline-md mb-4">PUISSANCE</h4>
+<p class="text-body-md font-body-md text-secondary">Développez une force explosive et une condition athlétique digne des plus grands sportifs de haut niveau.</p>
+</div>
+<div class="bg-surface-container/60 backdrop-blur-md p-10 reveal hover:border-primary-container border border-transparent transition-all group">
+<span class="material-symbols-outlined text-primary text-5xl mb-6 group-hover:scale-110 transition-transform">monitoring</span>
+<h4 class="text-headline-md font-headline-md mb-4">RÉCUPÉRATION</h4>
+<p class="text-body-md font-body-md text-secondary">Protocoles de mobilité et stratégies de récupération post-effort pour une longévité sportive maximale.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Programs Section -->
+<section class="py-section-gap-mobile md:py-section-gap-desktop px-gutter max-w-7xl mx-auto" id="programs">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8 reveal">
+<div>
+<span class="text-primary font-label-lg text-label-lg tracking-widest uppercase mb-4 block">Votre Evolution</span>
+<h3 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg uppercase">PROGRAMMES DE COACHING</h3>
+</div>
+<button class="border border-on-surface-variant text-on-surface-variant px-8 py-3 font-label-lg text-label-lg hover:bg-on-surface-variant hover:text-background transition-all">VOIR TOUT</button>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-0 border border-outline-variant reveal">
+<div class="group relative overflow-hidden border-r border-outline-variant p-10 aspect-[3/4] flex flex-col justify-end">
+<div class="absolute inset-0 bg-surface-container-high transition-transform duration-700 group-hover:scale-110">
+<div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent z-10"></div>
+<img class="w-full h-full object-cover grayscale opacity-40 group-hover:grayscale-0 group-hover:opacity-70 transition-all duration-700" data-alt="Action shot of intense workout session inside a high-end black and red gym, showing heavy lifting or dynamic movement with dramatic lens flare and high contrast." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQWnG8LfcfJOi8Rxkw8PaFH7yLFXrvPr81ariwBp-wLbRKdw3cANx-V5j65-vJTINLBiRNFoUmDn-iKWWVDLR3WQ_NxuiQmu1cWVsYoqjLNJssU-BW-5pobJeDlmk4-gg9Qa-dK_MJNlz_dhMc3BKDQBltnmCoJwGffVp5yScA9do8AVSj107aBu0HKyX2LrHp_ZR7xi0rECtS2Lkpj2e_2pQhZH7J0PTWNCsU92-EfnfQJcGVUPL9t15eAFxU8SFBpeM7VGSD6_Ze"/>
+</div>
+<div class="relative z-20">
+<h5 class="text-headline-md font-headline-md mb-2">12 WEEKS SHRED</h5>
+<p class="text-body-md font-body-md text-secondary/80 mb-6">Perte de gras accélérée et définition musculaire.</p>
+<span class="text-primary flex items-center gap-2 font-bold">EN SAVOIR PLUS <span class="material-symbols-outlined">arrow_forward</span></span>
+</div>
+</div>
+<div class="group relative overflow-hidden border-r border-outline-variant p-10 aspect-[3/4] flex flex-col justify-end">
+<div class="absolute inset-0 bg-surface-container-high transition-transform duration-700 group-hover:scale-110">
+<div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent z-10"></div>
+<img class="w-full h-full object-cover grayscale opacity-40 group-hover:grayscale-0 group-hover:opacity-70 transition-all duration-700" data-alt="Athletic coach showing form or mid-workout with intense lighting, focused on power and muscular detail against a dark architectural gym background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTTIlwLTbiYdxkHYd3gNRcA1896Cpr120pWmwqbMyBVQLqao9oZK7VzL-qnkzQcxZKLUhMY-hK2y5VL8gIsvUvpfFKHcnZ5ehDAwS9pm3OLmUV7_6Np4ENCfiOZ4hswTlV6tNoy_0kSCHMzuQVR0Ifkf-bXCO6AGb7wfKceR3L4Lw0_3eYGN9ys-vPq5Fj1dJD3rXU4JwmsjPOf1WNQM99RQ8GuPJP0Uhin3lW5lWcEoRo5okzmBYav_jblJAYPnsvieFTLiEphp_z"/>
+</div>
+<div class="relative z-20">
+<h5 class="text-headline-md font-headline-md mb-2">MASS GAIN PRO</h5>
+<p class="text-body-md font-body-md text-secondary/80 mb-6">Construction de masse musculaire pure sans gras.</p>
+<span class="text-primary flex items-center gap-2 font-bold">EN SAVOIR PLUS <span class="material-symbols-outlined">arrow_forward</span></span>
+</div>
+</div>
+<div class="group relative overflow-hidden p-10 aspect-[3/4] flex flex-col justify-end">
+<div class="absolute inset-0 bg-surface-container-high transition-transform duration-700 group-hover:scale-110">
+<div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent z-10"></div>
+<img class="w-full h-full object-cover grayscale opacity-40 group-hover:grayscale-0 group-hover:opacity-70 transition-all duration-700" data-alt="Modern fitness club atmosphere with high-end machinery in a red and black color scheme, professional gym lighting creating a high-performance vibe." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQWnG8LfcfJOi8Rxkw8PaFH7yLFXrvPr81ariwBp-wLbRKdw3cANx-V5j65-vJTINLBiRNFoUmDn-iKWWVDLR3WQ_NxuiQmu1cWVsYoqjLNJssU-BW-5pobJeDlmk4-gg9Qa-dK_MJNlz_dhMc3BKDQBltnmCoJwGffVp5yScA9do8AVSj107aBu0HKyX2LrHp_ZR7xi0rECtS2Lkpj2e_2pQhZH7J0PTWNCsU92-EfnfQJcGVUPL9t15eAFxU8SFBpeM7VGSD6_Ze"/>
+</div>
+<div class="relative z-20">
+<h5 class="text-headline-md font-headline-md mb-2">CUSTOM ELITE</h5>
+<p class="text-body-md font-body-md text-secondary/80 mb-6">Accompagnement 100% personnalisé 24/7.</p>
+<span class="text-primary flex items-center gap-2 font-bold">EN SAVOIR PLUS <span class="material-symbols-outlined">arrow_forward</span></span>
+</div>
+</div>
+</div>
+</section>
+<!-- Transformations Section -->
+<section class="bg-surface-container-lowest py-section-gap-mobile md:py-section-gap-desktop" id="transformations">
+<div class="px-gutter max-w-7xl mx-auto">
+<div class="text-center mb-16 reveal">
+<h3 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg uppercase mb-4">TRANSFORMATIONS</h3>
+<p class="text-body-lg font-body-lg text-secondary max-w-2xl mx-auto">Les preuves tangibles de la méthode Adnane Boujana. Avant/Après réels, résultats durables.</p>
+</div>
+<div class="reveal relative overflow-hidden rounded-xl border-4 border-surface-container-high shadow-2xl">
+<img alt="Fitness Transformations" class="w-full h-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDa2C3cn5bO0tvpKu2SAe792B1qDRlOv9oY-YfPmSzMJGmE5Lh-r0eX0uxKgIxo1k8FcRANDjLvQX1RidLm53YPU83aERAfal1Mlm7_aSO8HFttCyBo1e5kF4a5AAHjhqqS10abZ9jvjfgLKvEMPQv_zcocxQXQqMFUUv5y6XSCSYDdH_1054ywP86a-JlkqXyU4Hla2VXuVCuSm03BGYzQ-zFT6mgWUP7Vdnku3-2y6uE0FbJ2EyjUpMKGyyE4aafLCQCCZW9BGKZH"/>
+<div class="absolute bottom-0 left-0 right-0 p-8 bg-gradient-to-t from-black/80 to-transparent">
+<div class="flex flex-wrap gap-4 items-center">
+<span class="bg-primary-container text-on-primary-container px-4 py-1 font-label-lg text-label-lg">-15KG EN 12 SEMAINES</span>
+<span class="bg-white/10 backdrop-blur-md text-white px-4 py-1 font-label-lg text-label-lg">+8KG MUSCLE SEC</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Gallery Grid -->
+<section class="py-section-gap-mobile md:py-section-gap-desktop px-gutter">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-7xl mx-auto">
+<div class="aspect-square bg-surface-container-high overflow-hidden reveal">
+<img class="w-full h-full object-cover hover:scale-110 transition-transform duration-500" data-alt="Cinematic shot of a heavy-duty gym weight rack with sleek black and red weights, illuminated by sharp overhead spotlights in a professional studio gym." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQWnG8LfcfJOi8Rxkw8PaFH7yLFXrvPr81ariwBp-wLbRKdw3cANx-V5j65-vJTINLBiRNFoUmDn-iKWWVDLR3WQ_NxuiQmu1cWVsYoqjLNJssU-BW-5pobJeDlmk4-gg9Qa-dK_MJNlz_dhMc3BKDQBltnmCoJwGffVp5yScA9do8AVSj107aBu0HKyX2LrHp_ZR7xi0rECtS2Lkpj2e_2pQhZH7J0PTWNCsU92-EfnfQJcGVUPL9t15eAFxU8SFBpeM7VGSD6_Ze"/>
+</div>
+<div class="aspect-square bg-surface-container-high overflow-hidden reveal" style="transition-delay: 100ms">
+<img class="w-full h-full object-cover hover:scale-110 transition-transform duration-500" data-alt="Professional athlete or coach resting between sets, sitting on a gym bench with a focused expression, high contrast lighting emphasizing muscle tone and texture." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTTIlwLTbiYdxkHYd3gNRcA1896Cpr120pWmwqbMyBVQLqao9oZK7VzL-qnkzQcxZKLUhMY-hK2y5VL8gIsvUvpfFKHcnZ5ehDAwS9pm3OLmUV7_6Np4ENCfiOZ4hswTlV6tNoy_0kSCHMzuQVR0Ifkf-bXCO6AGb7wfKceR3L4Lw0_3eYGN9ys-vPq5Fj1dJD3rXU4JwmsjPOf1WNQM99RQ8GuPJP0Uhin3lW5lWcEoRo5okzmBYav_jblJAYPnsvieFTLiEphp_z"/>
+</div>
+<div class="aspect-square bg-surface-container-high overflow-hidden reveal" style="transition-delay: 200ms">
+<img class="w-full h-full object-cover hover:scale-110 transition-transform duration-500" data-alt="Dynamic shot of treadmill or cardio equipment in a luxury gym setting, blurred background showing movement and energy with red accent lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQWnG8LfcfJOi8Rxkw8PaFH7yLFXrvPr81ariwBp-wLbRKdw3cANx-V5j65-vJTINLBiRNFoUmDn-iKWWVDLR3WQ_NxuiQmu1cWVsYoqjLNJssU-BW-5pobJeDlmk4-gg9Qa-dK_MJNlz_dhMc3BKDQBltnmCoJwGffVp5yScA9do8AVSj107aBu0HKyX2LrHp_ZR7xi0rECtS2Lkpj2e_2pQhZH7J0PTWNCsU92-EfnfQJcGVUPL9t15eAFxU8SFBpeM7VGSD6_Ze"/>
+</div>
+<div class="aspect-square bg-surface-container-high overflow-hidden reveal" style="transition-delay: 300ms">
+<img class="w-full h-full object-cover hover:scale-110 transition-transform duration-500" data-alt="Full body shot of a fitness model standing confidently in high-end athletic gear, cinematic dark background with a single rim light effect." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTTIlwLTbiYdxkHYd3gNRcA1896Cpr120pWmwqbMyBVQLqao9oZK7VzL-qnkzQcxZKLUhMY-hK2y5VL8gIsvUvpfFKHcnZ5ehDAwS9pm3OLmUV7_6Np4ENCfiOZ4hswTlV6tNoy_0kSCHMzuQVR0Ifkf-bXCO6AGb7wfKceR3L4Lw0_3eYGN9ys-vPq5Fj1dJD3rXU4JwmsjPOf1WNQM99RQ8GuPJP0Uhin3lW5lWcEoRo5okzmBYav_jblJAYPnsvieFTLiEphp_z"/>
+</div>
+</div>
+</section>
+<!-- Testimonials -->
+<section class="py-section-gap-mobile md:py-section-gap-desktop bg-surface-container">
+<div class="px-gutter max-w-7xl mx-auto">
+<h3 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg uppercase mb-16 text-center reveal">TÉMOIGNAGES</h3>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="bg-background p-8 border-l-4 border-primary-container reveal">
+<div class="flex text-primary mb-4">
+<span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span>
+</div>
+<p class="text-body-md italic text-on-surface-variant mb-6">"Le meilleur investissement que j'ai fait pour ma santé. Adnane n'est pas juste un coach, c'est un mentor qui m'a appris la discipline."</p>
+<p class="font-headline-md text-primary">- MARC S.</p>
+</div>
+<div class="bg-background p-8 border-l-4 border-primary-container reveal" style="transition-delay: 100ms">
+<div class="flex text-primary mb-4">
+<span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span>
+</div>
+<p class="text-body-md italic text-on-surface-variant mb-6">"Les programmes sont incroyablement précis. On sent l'expérience derrière chaque répétition suggérée."</p>
+<p class="font-headline-md text-primary">- YASSINE B.</p>
+</div>
+<div class="bg-background p-8 border-l-4 border-primary-container reveal" style="transition-delay: 200ms">
+<div class="flex text-primary mb-4">
+<span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span>
+</div>
+<p class="text-body-md italic text-on-surface-variant mb-6">"J'ai perdu 10kg en 2 mois tout en gagnant en force. Sa méthode de nutrition est révolutionnaire."</p>
+<p class="font-headline-md text-primary">- SARAH K.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-section-gap-mobile md:py-section-gap-desktop px-gutter max-w-7xl mx-auto" id="contact">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+<div class="reveal">
+<h3 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg uppercase mb-8">CONTACTEZ-MOI</h3>
+<p class="text-body-lg text-secondary mb-12">Prêt à transformer votre vie ? Parlons de vos objectifs aujourd'hui.</p>
+<div class="space-y-6">
+<a class="flex items-center gap-6 p-6 bg-surface-container-high hover:bg-primary-container hover:text-on-primary-container transition-all group" href="tel:+33600000000">
+<span class="material-symbols-outlined text-primary group-hover:text-on-primary-container text-4xl">call</span>
+<div>
+<div class="text-label-sm uppercase opacity-60">Appelez-moi</div>
+<div class="text-headline-md">+33 6 00 00 00 00</div>
+</div>
+</a>
+<a class="flex items-center gap-6 p-6 bg-surface-container-high hover:bg-[#25D366] hover:text-white transition-all group" href="https://wa.me/33600000000">
+<span class="material-symbols-outlined text-[#25D366] group-hover:text-white text-4xl">chat</span>
+<div>
+<div class="text-label-sm uppercase opacity-60">WhatsApp</div>
+<div class="text-headline-md">Message direct</div>
+</div>
+</a>
+<a class="flex items-center gap-6 p-6 bg-surface-container-high hover:bg-gradient-to-tr hover:from-[#f09433] hover:via-[#dc2743] hover:to-[#bc1888] hover:text-white transition-all group" href="#">
+<span class="material-symbols-outlined text-white group-hover:text-white text-4xl">person</span>
+<div>
+<div class="text-label-sm uppercase opacity-60">Instagram</div>
+<div class="text-headline-md">@adnane.coach</div>
+</div>
+</a>
+</div>
+</div>
+<div class="bg-surface-container p-10 reveal">
+<form class="space-y-8">
+<div>
+<label class="text-label-lg uppercase block mb-2">Nom Complet</label>
+<input class="w-full bg-transparent border-b border-outline focus:border-primary transition-colors outline-none py-4 text-headline-md font-headline-md" placeholder="VOTRE NOM" type="text"/>
+</div>
+<div>
+<label class="text-label-lg uppercase block mb-2">Email</label>
+<input class="w-full bg-transparent border-b border-outline focus:border-primary transition-colors outline-none py-4 text-headline-md font-headline-md" placeholder="VOTRE EMAIL" type="email"/>
+</div>
+<div>
+<label class="text-label-lg uppercase block mb-2">Objectif Principal</label>
+<select class="w-full bg-transparent border-b border-outline focus:border-primary transition-colors outline-none py-4 text-headline-md font-headline-md appearance-none">
+<option class="bg-background">Perte de poids</option>
+<option class="bg-background">Prise de masse</option>
+<option class="bg-background">Remise en forme</option>
+</select>
+</div>
+<button class="w-full bg-primary-container text-on-primary-container py-6 text-headline-md font-bold btn-slide" type="submit">
+<span>ENVOYER LA DEMANDE</span>
+</button>
+</form>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest dark:bg-surface-container-lowest w-full py-section-gap-mobile md:py-section-gap-desktop border-t border-outline-variant">
+<div class="max-w-7xl mx-auto px-gutter grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+<div>
+<h4 class="text-headline-md font-headline-md font-bold text-primary mb-4">ADNANE BOUJANA</h4>
+<p class="text-body-md font-body-md text-on-surface-variant">© 2024 ADNANE BOUJANA. ALL RIGHTS RESERVED.</p>
+</div>
+<div class="flex flex-wrap gap-8 md:justify-end">
+<a class="text-label-lg font-label-lg text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Instagram</a>
+<a class="text-label-lg font-label-lg text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">WhatsApp</a>
+<a class="text-label-lg font-label-lg text-on-surface-variant hover:text-primary transition-colors duration-300" href="#contact">Contact</a>
+<a class="text-label-lg font-label-lg text-on-surface-variant hover:text-primary transition-colors duration-300" href="#" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;">Back to Top</a>
+</div>
+</div>
+</footer>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 bg-surface-container/80 dark:bg-surface-container/80 backdrop-blur-lg border-t border-outline-variant/30 flex justify-around items-center px-4 py-3 rounded-t-xl shadow-2xl shadow-primary/20">
+<a class="text-on-surface-variant p-3 hover:text-primary transition-all" href="#contact">
+<span class="material-symbols-outlined">chat</span>
+</a>
+<a class="text-on-surface-variant p-3 hover:text-primary transition-all" href="tel:+33600000000">
+<span class="material-symbols-outlined">call</span>
+</a>
+<a class="bg-primary-container text-on-primary-container rounded-full p-3 active:scale-110 duration-200" href="#" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;">
+<span class="material-symbols-outlined">arrow_upward</span>
+</a>
+</nav>
+<script>
+        // Drawer Logic
+        const menuBtn = document.getElementById('menuBtn');
+        const closeBtn = document.getElementById('closeBtn');
+        const drawer = document.getElementById('drawer');
+        const drawerContent = document.getElementById('drawerContent');
+
+        function toggleDrawer() {
+            if (drawer.classList.contains('hidden')) {
+                drawer.classList.remove('hidden');
+                setTimeout(() => {
+                    drawerContent.classList.remove('-translate-x-full');
+                }, 10);
+            } else {
+                drawerContent.classList.add('-translate-x-full');
+                setTimeout(() => {
+                    drawer.classList.add('hidden');
+                }, 300);
+            }
+        }
+
+        menuBtn.addEventListener('click', toggleDrawer);
+        closeBtn.addEventListener('click', toggleDrawer);
+        drawer.addEventListener('click', (e) => {
+            if (e.target === drawer) toggleDrawer();
+        });
+
+        // Close drawer on link click
+        document.querySelectorAll('#drawerContent a').forEach(link => {
+            link.addEventListener('click', toggleDrawer);
+        });
+
+        // Scroll Animations
+        function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 150;
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                }
+            }
+        }
+
+        window.addEventListener("scroll", reveal);
+        reveal(); // Initial check
+    </script>
+</body></html>
